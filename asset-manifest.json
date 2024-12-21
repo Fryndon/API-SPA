@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/API-SPA/static/css/main.351c3beb.css",
+    "main.js": "/API-SPA/static/js/main.11af6799.js",
+    "static/js/453.3e49419c.chunk.js": "/API-SPA/static/js/453.3e49419c.chunk.js",
+    "index.html": "/API-SPA/index.html",
+    "main.351c3beb.css.map": "/API-SPA/static/css/main.351c3beb.css.map",
+    "main.11af6799.js.map": "/API-SPA/static/js/main.11af6799.js.map",
+    "453.3e49419c.chunk.js.map": "/API-SPA/static/js/453.3e49419c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.351c3beb.css",
+    "static/js/main.11af6799.js"
+  ]
+}
