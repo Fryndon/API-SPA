@@ -1,0 +1,163 @@
+/*Общее стили для body*/
+body {
+  max-width: 98%;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #f0f4f8, #d9e4ef);
+  margin-left: 0.7%;
+  color: #2c3e50;
+}
+
+/*Стили для навигации*/
+nav {
+  background: rgba(44, 62, 80, 0.9);
+  padding: 15px;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(236, 240, 241, 0.3);
+}
+
+/*Общие стили для страниц*/
+.container {
+  max-width: 100%;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/*Стили для заголовков*/
+h1, h2 {
+  color: #34495e;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+/*Стили для списков*/
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+  padding: 15px;
+  border-radius: 8px;
+  background: #ecf0f1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*Стили для фото-галереи*/
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); /* Изменение значений на minmax(0, 1fr) */
+  gap: 15px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
+
+/*Стили для индикаторов загрузки*/
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-top: 30px;
+}
+
+/*Стили для кнопок*/
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+/*Стили для страницы 404*/
+.not-found {
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.not-found a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 1px dashed #3498db;
+    transition: color 0.3s;
+}
+
+.not-found a:hover {
+    color: #2980b9;
+}
+
+/*Адаптивные стили*/
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin-bottom: 1rem;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
